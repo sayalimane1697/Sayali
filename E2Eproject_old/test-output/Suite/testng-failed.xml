@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="main testing(failed)">
+    <classes>
+      <class name="A_package.validateTitle">
+        <methods>
+          <include name="pageNavigation"/>
+          <include name="close"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- A_package.validateTitle -->
+    </classes>
+  </test> <!-- main testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->
