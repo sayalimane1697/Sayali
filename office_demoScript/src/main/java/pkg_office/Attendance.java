@@ -45,14 +45,9 @@ public class Attendance extends base {
 		WebElement e=driver.findElement(By.id("page-Attendance"));
 		act.moveToElement(e).click().build().perform();
 		
-		System.out.println("attendance filled successfully");
 	
-   
 	}
-	
 		
-	
-	
 }
 
 

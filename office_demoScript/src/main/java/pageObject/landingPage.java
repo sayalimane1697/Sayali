@@ -9,10 +9,11 @@ public class landingPage {
 	public WebDriver driver;
 	By explore = By.xpath("//div/a[text()='Explore']");
 	By btn = By.className("btn");
-	By b = By.xpath("//div/a[contains(@class, 'btn-office_365')]");
+	By btnOfc = By.xpath("//div/a[contains(@class, 'btn-office_365')]");
 	
-	By logo=By.xpath("//img[@class='app-logo']");
-	
+	By logo = By.xpath("//img[@class='app-logo']");
+	By addLeaveBtn = By.xpath("//div[contains(text(),'Add Leave Application')]");
+	By leaveType = By.cssSelector("input[data-fieldname='leave_type']");
 	
 	public landingPage(WebDriver driver) {
 		this.driver=driver;
@@ -28,14 +29,23 @@ public class landingPage {
 		return driver.findElement(btn);
 	}
 
-	public WebElement getb()
+	public WebElement getbtnOfc()
 	{
-		return driver.findElement(b);
+		return driver.findElement(btnOfc);
 	}
 	
 	public WebElement getlogo()
 	{
 		return driver.findElement(logo);
 	}
+
+	public WebElement getaddLeaveBtn()
+	{
+		return driver.findElement(addLeaveBtn);
+	}
 	
+	public WebElement getleaveType()
+	{
+		return driver.findElement(leaveType);
+	}
 }

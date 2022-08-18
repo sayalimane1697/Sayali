@@ -21,14 +21,15 @@ public class Debugger {
 		ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setExperimentalOption("debuggerAddress", "localhost:9876");
         driver= new ChromeDriver(chromeOptions);
-    	driver.get("https://onebeta.systenics.com/app/home");
+    	driver.get("https://onebeta.systenics.com/app/attendance");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-//		landingPage land= new landingPage(driver);
-//		loginPage login = new loginPage(driver);
+		landingPage land= new landingPage(driver);
+		loginPage login = new loginPage(driver);
+		
 //		land.getexplore().click();
 //		land.getbtn().click();
-//		land.getb().click();
+//		land.getbtnOfc().click();
 //	
 //		login.getemail().sendKeys("sayali.m@systenics.net");
 //		login.geteclick().click();
@@ -38,8 +39,16 @@ public class Debugger {
 //		login.getlogin().click();
 //		System.out.println("login sucess");
 		
-		Attendance at = new Attendance();
-	    at.addAttedance(driver);
+//		Attendance at = new Attendance();
+//	    at.addAttedance(driver);
+	    
+	    leaveApplication leave = new leaveApplication();
+		land.getlogo().click();
+		land.getaddLeaveBtn().click();
+		land.getleaveType().click();
+		leave.leaveMethod(driver);
+		
+		
 	    
 //	    wfh w = new wfh(driver);
 //	    w.wfh(driver);
