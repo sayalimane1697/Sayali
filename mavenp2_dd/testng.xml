@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <listeners>
+<listener class-name="testNG_pkg.Listeners"/>
+</listeners>
+   <parameter name="URL" value="www.google.com"/>
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<exclude name="Group122" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG_pkg.demo1" />
+			<class name="testNG_pkg.demo2" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<parameter name="study" value="www.udemy.com"/>
+	<test name="Home Loan">
+		<classes>
+
+			<class name="testNG_pkg.demo3">
+				<methods>
+					<exclude name="LoginAPIHomeLoansa" />
+				</methods>
+			</class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
