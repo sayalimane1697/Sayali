@@ -29,7 +29,7 @@ public class sign_in extends base{
 	{
 	
 		driver.get(prop.getProperty("url"));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		
 		landingPage land= new landingPage(driver);
 		loginPage login = new loginPage(driver);
@@ -51,19 +51,19 @@ public class sign_in extends base{
 		
 	    Thread.sleep(1000);
 		leaveApplication leave = new leaveApplication();
-		
+		Thread.sleep(3000);
 		land.getlogo().click();
 		land.getaddLeaveBtn().click();
 		leave.leaveMethod(driver);
-	
+		
 	}
 	
 
-	@AfterTest
-	public void close()
-	{
-		driver.close();
-	}
+//	@AfterTest
+//	public void close()
+//	{
+//		driver.close();
+//	}
 	
 	
 //	@DataProvider

@@ -7,13 +7,13 @@ import org.openqa.selenium.WebElement;
 public class landingPage {
 	
 	public WebDriver driver;
-	By explore = By.xpath("//div/a[text()='Explore']");
-	By btn = By.className("btn");
-	By btnOfc = By.xpath("//div/a[contains(@class, 'btn-office_365')]");
+	private By explore = By.xpath("//div/a[text()='Explore']");
+	private By btn = By.className("btn");
+	private By btnOfc = By.xpath("//div/a[contains(@class, 'btn-office_365')]");
 	
-	By logo = By.xpath("//img[@class='app-logo']");
-	By addLeaveBtn = By.xpath("//div[contains(text(),'Add Leave Application')]");
-	By leaveType = By.cssSelector("input[data-fieldname='leave_type']");
+	private By logo = By.xpath("//img[@class='app-logo']");
+	private By addLeaveBtn = By.xpath("//div[contains(text(),'Add Leave Application')]");
+	private By leaveType = By.cssSelector("input[data-fieldname='leave_type']");
 	
 	public landingPage(WebDriver driver) {
 		this.driver=driver;

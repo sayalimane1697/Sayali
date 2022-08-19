@@ -21,11 +21,9 @@ public class leaveApplication {
 //		driver.findElement(By.cssSelector("input[data-fieldname='leave_type']")).sendKeys("leave");
 //		List<WebElement> options=driver.findElements(By.xpath("//ul[@role='listbox']/li/a/p")); //list<webelements> only use for driver.findelements
 		
-        Actions act = new Actions(driver);
-		WebElement staticDropdown=driver.findElement(By.xpath("//ul[@id='awesomplete_list_4']"));
-		staticDropdown.click();
-		act.moveToElement(staticDropdown).click().build().perform();
-		act.moveToElement(staticDropdown).sendKeys(Keys.DOWN).click().build().perform();
+		WebElement dropdown=driver.findElement(By.xpath("//ul[@id='awesomplete_list_4']"));
+		dropdown.click();
+		dropdown.sendKeys(Keys.DOWN);
 	
 //		for(WebElement option: options)
 //		{
@@ -42,3 +40,8 @@ public class leaveApplication {
 	}
 	
 }
+//Actions act = new Actions(driver);
+//WebElement staticDropdown=driver.findElement(By.xpath("//ul[@id='awesomplete_list_4']"));
+//staticDropdown.click();
+//act.moveToElement(staticDropdown).click().build().perform();
+//act.moveToElement(staticDropdown).sendKeys(Keys.DOWN).click().build().perform();

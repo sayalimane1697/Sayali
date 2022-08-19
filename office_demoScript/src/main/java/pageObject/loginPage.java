@@ -7,11 +7,11 @@ import org.openqa.selenium.WebElement;
 public class loginPage {
 	
 	public WebDriver driver;
-	By email = By.id("i0116");
-	By eclick = By.id("idSIButton9");
-	By password = By.xpath("//input[@name='passwd']");
-	By pclick = By.xpath("//input[@value='Sign in']");
-	By login = By.xpath("//input[@value='Yes']");
+	private By email = By.id("i0116");
+	private By eclick = By.id("idSIButton9");
+	private By password = By.xpath("//input[@name='passwd']");
+	private By pclick = By.xpath("//input[@value='Sign in']");
+	private By login = By.xpath("//input[@value='Yes']");
 	
 	public loginPage(WebDriver driver) {
 		

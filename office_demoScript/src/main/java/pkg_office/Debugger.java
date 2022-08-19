@@ -21,31 +21,34 @@ public class Debugger {
 		ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setExperimentalOption("debuggerAddress", "localhost:9876");
         driver= new ChromeDriver(chromeOptions);
-    	driver.get("https://onebeta.systenics.com/app/attendance");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    	driver.get("https://onebeta.systenics.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		landingPage land= new landingPage(driver);
 		loginPage login = new loginPage(driver);
+	
+		land.getexplore().click();
+		land.getbtn().click();
+		land.getbtnOfc().click();
 		
-//		land.getexplore().click();
-//		land.getbtn().click();
-//		land.getbtnOfc().click();
-//	
-//		login.getemail().sendKeys("sayali.m@systenics.net");
-//		login.geteclick().click();
-//		login.getpassword().sendKeys("a67!FT@Kc$CT7WZ");
-//		Thread.sleep(1000);
-//		login.getpclick().click();
-//		login.getlogin().click();
-//		System.out.println("login sucess");
+	
+		login.getemail().sendKeys("sayali.m@systenics.net");
+		login.geteclick().click();
+		login.getpassword().sendKeys("a67!FT@Kc$CT7WZ");
+		Thread.sleep(1000);
+		login.getpclick().click();
+		login.getlogin().click();
+		System.out.println("login sucess");
 		
-//		Attendance at = new Attendance();
-//	    at.addAttedance(driver);
-	    
-	    leaveApplication leave = new leaveApplication();
+		Attendance at = new Attendance();
+	    at.addAttedance(driver);
+	    System.out.println("attendance filled successfully");
+		
+	    Thread.sleep(1000);
+		leaveApplication leave = new leaveApplication();
+		Thread.sleep(3000);
 		land.getlogo().click();
 		land.getaddLeaveBtn().click();
-		land.getleaveType().click();
 		leave.leaveMethod(driver);
 		
 		
