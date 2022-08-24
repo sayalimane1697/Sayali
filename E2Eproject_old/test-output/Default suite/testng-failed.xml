@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="A_package.validateTitle">
+      <class name="A_package.HomePage">
         <methods>
-          <include name="pageNavigation"/>
+          <include name="pageNavigation" invocation-numbers="0 1"/>
           <include name="close"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- A_package.validateTitle -->
+      </class> <!-- A_package.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

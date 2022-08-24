@@ -11,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -26,7 +27,7 @@ public class Base {
 	public WebDriver initializeDriver() throws IOException
 	{
 	 p=new Properties();
-	FileInputStream fis=new FileInputStream("C:\\Users\\SayaliMane\\eclipse-workspace\\E2Eproject\\src\\main\\java\\A_package\\data.properties");
+	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\A_package\\data.properties");
 	p.load(fis);
 	String browserName= p.getProperty("browser");
 	String URL= p.getProperty("url"); 
@@ -50,7 +51,7 @@ public class Base {
 	return driver;
 	}
 	
-	
+
 	public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException
 	{
 		TakesScreenshot ss=(TakesScreenshot) driver;
@@ -60,5 +61,7 @@ public class Base {
 		return destinationFile;
 	}
 	
+	
+
 
 }

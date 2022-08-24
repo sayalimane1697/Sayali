@@ -7,18 +7,22 @@ import org.openqa.selenium.WebElement;
 public class landingPage {
 
 	public WebDriver driver;
-	 By loginButton= By.cssSelector("a[href*='sign_in']");
-	 By title=By.cssSelector(".text-center");
-	 By TopMenu=By.cssSelector(".nav.navbar-nav.navbar-right>li");
+	 private By loginButton= By.cssSelector("a[href*='sign_in']");
+	 private By title=By.cssSelector(".text-center h2");
+	 private By TopMenu=By.cssSelector(".nav.navbar-nav.navbar-right>li");
 	 
 	 
 	 public landingPage(WebDriver driver) {
 		this.driver= driver;
 	}
 
-	public WebElement getlogin()
+	public loginPage getlogin()
 	 {
-		 return driver.findElement(loginButton);
+		
+		 driver.findElement(loginButton).click();
+		 loginPage lp=new loginPage(driver);
+		 return lp;
+//		 return driver.findElement(loginButton);
 	 }
 	
 	public WebElement getTitle()

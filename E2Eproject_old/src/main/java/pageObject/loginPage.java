@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 public class loginPage {
 
 	public WebDriver driver;
-	By email= By.id("user_email");
-	By password= By.id("user_password");
-	By login= By.name("commit");
+	private By email= By.id("user_email");
+	private By password= By.id("user_password");
+	private By login= By.name("commit");
+	private By forgotPassword = By.cssSelector("[href*='password/new']");
+
 	
 	 public loginPage(WebDriver driver) {
 			this.driver= driver;
@@ -30,4 +32,11 @@ public class loginPage {
 	    	return driver.findElement(login);
 	    }
 	
+	    public ForgotPassword getForgetPass()
+	    {
+	    	driver.findElement(forgotPassword).click();
+	    	return new ForgotPassword(driver);
+//	    	return driver.findElement(forgotPassword);
+	    	
+	    }
 }
