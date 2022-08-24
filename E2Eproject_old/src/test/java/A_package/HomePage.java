@@ -2,16 +2,22 @@ package A_package;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebElement;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import pageObject.ForgotPassword;
 import pageObject.landingPage;
 import pageObject.loginPage;
 
 public class HomePage extends Base {
+	
+	public WebDriver driver;
+	public static Logger log =LogManager.getLogger(Base.class.getName());
 	
 	@BeforeTest
 	public void initialize() throws IOException
@@ -25,15 +31,18 @@ public class HomePage extends Base {
 	{
 	
 		driver.get(p.getProperty("url"));
+		landingPage l=new landingPage(driver);
+		loginPage lp=l.getlogin(); //driver.findElement(By.css()
+		lp.getemail().sendKeys(username);
+		lp.getpassword().sendKeys(password);
+
+		log.info(text);
 		
-	    landingPage l=new landingPage(driver);
-	    l.getlogin().click();
-	    loginPage login=new loginPage(driver);
-	    login.getemail().sendKeys(username);
-	    login.getpassword().sendKeys(password);
-	    System.out.println(text);
-	    login.getlogin().click();
-	    
+		lp.getlogin().click();
+		ForgotPassword fp= lp.getForgetPass();
+		fp.getEmail().sendKeys("xxx");
+		fp.sendMeInstructions().click();
+	  
 	} 
 	
 
@@ -61,5 +70,24 @@ public class HomePage extends Base {
 	
 		return data;
 	}
+	
+
   
 }
+//driver.get(p.getProperty("url"));
+//
+//landingPage l=new landingPage(driver);
+//loginPage login=new loginPage(driver);
+//l.getlogin().click();
+//login.getemail().sendKeys(username);
+//
+//WebElement name=driver.findElement(By.cssSelector("user_email"));
+//name.sendKeys("dsjfs");
+//File file =name.getScreenshotAs(OutputType.FILE);
+//FileUtils.copyFile(file, new File("logo.png"));
+//System.out.println(name.getRect().getDimension().getHeight());
+//name.getAttribute("Value");
+//
+//login.getpassword().sendKeys(password);
+//System.out.println(text);
+//login.getlogin().click();

@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<listeners>
-<listener class-name="A_package.Listeners"/>
-</listeners>
+	<listeners>
+		<listener class-name="A_package.Listeners" />
+	</listeners>
 
 	<test thread-count="5" name="main testing">
 		<classes>
@@ -17,8 +17,8 @@
 			<class name="A_package.validateTitle" />
 		</classes>
 	</test>
-	
-		<test thread-count="5" name="navigation bar">
+
+	<test thread-count="5" name="navigation bar">
 		<classes>
 			<class name="A_package.navigationBar" />
 		</classes>
@@ -29,12 +29,14 @@
 			<class name="A_package.Listeners" />
 		</classes>
 	</test> <!-- Test -->
-	
-		<test thread-count="5" name="extent report test">
+
+	<test thread-count="5" name="extent report test">
 		<classes>
 			<class name="A_package.ExtentReport" />
 		</classes>
 	</test>
 	
 	
+
+
 </suite> <!-- Suite -->
