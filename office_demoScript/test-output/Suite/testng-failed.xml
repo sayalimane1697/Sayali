@@ -5,7 +5,6 @@
     <classes>
       <class name="pkg_office.sign_in">
         <methods>
-          <include name="close"/>
           <include name="initialize"/>
           <include name="pageNavigation"/>
         </methods>

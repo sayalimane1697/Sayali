@@ -36,11 +36,12 @@ public class base{
     	{
     		WebDriverManager.chromedriver().setup();
     		ChromeOptions options= new ChromeOptions();
-    		if (browserName.contains("headless")) 
-    		{
-				options.addArguments("headless");
-				options.addArguments("--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors","--disable-extensions", "--no-sandbox", "--disable-dev-shm-usage");
-			}
+    		options.addArguments("headless");
+//    		if (browserName.contains("headless")) 
+//    		{
+//				options.addArguments("headless");
+//				options.addArguments("--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors","--disable-extensions", "--no-sandbox", "--disable-dev-shm-usage");
+//			}
 //    		System.setProperty("webdriver.chrome.driver", "C:/Program Files/Driver/chromedriver_win32/chromedriver.exe");
     		driver= new ChromeDriver(options);
     	}

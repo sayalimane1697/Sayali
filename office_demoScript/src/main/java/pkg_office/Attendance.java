@@ -1,5 +1,7 @@
 package pkg_office;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -45,7 +47,7 @@ public class Attendance extends base {
 		WebElement e=driver.findElement(By.id("page-Attendance"));
 		act.moveToElement(e).click().build().perform();
 		
-	
+		
 	}
 		
 }

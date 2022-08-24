@@ -40,7 +40,6 @@ public class sign_in extends base{
 		login.getemail().sendKeys("sayali.m@systenics.net");
 		login.geteclick().click();
 		login.getpassword().sendKeys("a67!FT@Kc$CT7WZ");
-		Thread.sleep(1000);
 		login.getpclick().click();
 		login.getlogin().click();
 		System.out.println("login sucess");
@@ -48,8 +47,7 @@ public class sign_in extends base{
 		Attendance at = new Attendance();
 	    at.addAttedance(driver);
 	    System.out.println("attendance filled successfully");
-		
-	    Thread.sleep(1000);
+	
 		leaveApplication leave = new leaveApplication();
 		Thread.sleep(3000);
 		land.getlogo().click();
