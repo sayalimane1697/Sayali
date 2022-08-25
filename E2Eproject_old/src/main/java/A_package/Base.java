@@ -58,10 +58,10 @@ public class Base {
 		File source =ss.getScreenshotAs(OutputType.FILE);
 		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
 		FileUtils.copyFile(source, new File(destinationFile));
-		FileUtils.copyFile(source, new File("logo.png"));
-		source.getAbsolutePath();
 		return destinationFile;
-	} 
+	}
 	
+	
+
 
 }

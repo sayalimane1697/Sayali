@@ -14,7 +14,7 @@ public class loginPage {
 
 	
 	 public loginPage(WebDriver driver) {
-			this.driver= driver; //
+			this.driver= driver;
 		}
 
 		public WebElement getemail()

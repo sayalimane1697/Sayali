@@ -10,10 +10,10 @@ package practice;
 	import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+	@Test
 	public class Assignment2 {
 
-		@Test
-		public void test2() {
+		public static void main(String[] args) {
 //			WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
 			WebDriver driver=new ChromeDriver();

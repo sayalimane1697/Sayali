@@ -23,7 +23,7 @@ public class navigationBar extends Base {
 	{
 		driver=initializeDriver();
 		driver.get(p.getProperty("url"));
-	} 
+	}
 	
 	@Test
 	public void validationBar()

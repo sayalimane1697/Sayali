@@ -11,11 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-
+@Test
 public class Assignment4 {
 
-	@Test
-	public void test4() {
+	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
@@ -23,7 +22,6 @@ public class Assignment4 {
 		driver.manage().window().maximize();
 		
 
-		driver.findElement(By.xpath("//ul/li/a[@href='/windows']"));
 		driver.findElement(By.xpath("//a[text()='Click Here']")).click();
 		Set<String> windows=driver.getWindowHandles();
 		Iterator<String>it=windows.iterator();

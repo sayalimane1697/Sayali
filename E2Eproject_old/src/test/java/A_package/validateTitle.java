@@ -27,7 +27,7 @@ public class validateTitle extends Base {
 		log.info("navigate to page");
 	}
 	
-	@Test 
+	@Test
 	public void pageNavigation() throws IOException
 	{
 		
