@@ -5,10 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-@Test
+
 public class Assignment5 {
 
-	public static void main(String[] args) {
+	@Test
+	public void test5() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		

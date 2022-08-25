@@ -14,9 +14,9 @@ import com.aventstack.extentreports.Status;
 public class Listeners extends Base implements ITestListener {
 
 	ExtentTest test;
-	ExtentReports extent=ExtentReport.getRrportObject();
+	ExtentReports extent=ExtentReport.getRrportObject(); 
 	
-	ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
+	ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>(); 
 	
 	@Override
 	public void onTestStart(ITestResult result) {

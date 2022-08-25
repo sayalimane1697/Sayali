@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-24T15:52:00 IST" name="Suite" finished-at="2022-08-24T15:52:14 IST" duration-ms="14176">
+  <suite started-at="2022-08-25T18:38:25 IST" name="Suite" finished-at="2022-08-25T18:38:40 IST" duration-ms="14662">
     <groups>
     </groups>
-    <test started-at="2022-08-24T15:52:00 IST" name="main testing" finished-at="2022-08-24T15:52:07 IST" duration-ms="6808">
+    <test started-at="2022-08-25T18:38:25 IST" name="main testing" finished-at="2022-08-25T18:38:33 IST" duration-ms="7509">
       <class name="A_package.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-24T15:52:00 IST" name="initialize" finished-at="2022-08-24T15:52:02 IST" duration-ms="2061" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:25 IST" name="initialize" finished-at="2022-08-25T18:38:28 IST" duration-ms="3063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-24T15:52:02 IST" name="pageNavigation" data-provider="getData" finished-at="2022-08-24T15:52:05 IST" duration-ms="2758" status="PASS">
+        <test-method signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:28 IST" name="pageNavigation" data-provider="getData" finished-at="2022-08-25T18:38:31 IST" duration-ms="2604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageNavigation -->
-        <test-method signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-24T15:52:05 IST" name="pageNavigation" data-provider="getData" finished-at="2022-08-24T15:52:07 IST" duration-ms="1855" status="PASS">
+        <test-method signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:31 IST" name="pageNavigation" data-provider="getData" finished-at="2022-08-25T18:38:33 IST" duration-ms="1710" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,25 +53,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageNavigation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-24T15:52:07 IST" name="close" finished-at="2022-08-24T15:52:07 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:33 IST" name="close" finished-at="2022-08-25T18:38:33 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- A_package.HomePage -->
     </test> <!-- main testing -->
-    <test started-at="2022-08-24T15:52:07 IST" name="validation of test" finished-at="2022-08-24T15:52:11 IST" duration-ms="3557">
+    <test started-at="2022-08-25T18:38:33 IST" name="validation of test" finished-at="2022-08-25T18:38:37 IST" duration-ms="3457">
       <class name="A_package.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-24T15:52:07 IST" name="initialize" finished-at="2022-08-24T15:52:11 IST" duration-ms="3088" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-25T18:38:33 IST" name="initialize" finished-at="2022-08-25T18:38:36 IST" duration-ms="3087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="pageNavigation()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-24T15:52:11 IST" name="pageNavigation" finished-at="2022-08-24T15:52:11 IST" duration-ms="60" status="FAIL">
+        <test-method signature="pageNavigation()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-25T18:38:36 IST" name="pageNavigation" finished-at="2022-08-25T18:38:36 IST" duration-ms="39" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [FEATURED COURSES12] but found [FEATURED COURSES]]]>
+              <![CDATA[expected [FEATURED COURSES123] but found [FEATURED COURSES]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES12] but found [FEATURED COURSES]
+              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES123] but found [FEATURED COURSES]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -113,31 +113,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageNavigation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-24T15:52:11 IST" name="close" finished-at="2022-08-24T15:52:11 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-25T18:38:36 IST" name="close" finished-at="2022-08-25T18:38:37 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- A_package.validateTitle -->
     </test> <!-- validation of test -->
-    <test started-at="2022-08-24T15:52:11 IST" name="navigation bar" finished-at="2022-08-24T15:52:14 IST" duration-ms="3324">
+    <test started-at="2022-08-25T18:38:37 IST" name="navigation bar" finished-at="2022-08-25T18:38:40 IST" duration-ms="3151">
       <class name="A_package.navigationBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-24T15:52:11 IST" name="initialize" finished-at="2022-08-24T15:52:14 IST" duration-ms="3129" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-25T18:38:37 IST" name="initialize" finished-at="2022-08-25T18:38:40 IST" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validationBar()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-24T15:52:14 IST" name="validationBar" finished-at="2022-08-24T15:52:14 IST" duration-ms="61" status="PASS">
+        <test-method signature="validationBar()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-25T18:38:40 IST" name="validationBar" finished-at="2022-08-25T18:38:40 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validationBar -->
-        <test-method is-config="true" signature="close()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-24T15:52:14 IST" name="close" finished-at="2022-08-24T15:52:14 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-25T18:38:40 IST" name="close" finished-at="2022-08-25T18:38:40 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- A_package.navigationBar -->
     </test> <!-- navigation bar -->
-    <test started-at="2022-08-24T15:52:14 IST" name="Listener test" finished-at="2022-08-24T15:52:14 IST" duration-ms="3">
+    <test started-at="2022-08-25T18:38:40 IST" name="Listener test" finished-at="2022-08-25T18:38:40 IST" duration-ms="2">
     </test> <!-- Listener test -->
-    <test started-at="2022-08-24T15:52:14 IST" name="extent report test" finished-at="2022-08-24T15:52:14 IST" duration-ms="3">
+    <test started-at="2022-08-25T18:38:40 IST" name="extent report test" finished-at="2022-08-25T18:38:40 IST" duration-ms="2">
     </test> <!-- extent report test -->
   </suite> <!-- Suite -->
 </testng-results>
