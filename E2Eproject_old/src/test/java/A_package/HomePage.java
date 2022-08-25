@@ -38,7 +38,7 @@ public class HomePage extends Base {
 
 		log.info(text);
 		
-		lp.getlogin().click();
+		lp.getlogin().click(); 
 		ForgotPassword fp= lp.getForgetPass();
 		fp.getEmail().sendKeys("xxx");
 		fp.sendMeInstructions().click();

@@ -12,10 +12,11 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Test
+
 public class Assignment8 {
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void test8() throws InterruptedException{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
