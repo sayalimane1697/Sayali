@@ -1,4 +1,4 @@
-package maven_dd.dd;
+package practice_1;
 
 import java.util.Scanner;
 

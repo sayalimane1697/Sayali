@@ -4,6 +4,7 @@
 
 	<test thread-count="5" name="Test">
 		<classes>
+		    <class name="practice.forPractice" />
 			<class name="practice.Assignment1" />
 			<class name="practice.Assignment2" />
 			<class name="practice.Assignment3" />

@@ -1,10 +1,15 @@
 package practice;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,11 +40,21 @@ public class Assignment4 {
 		System.out.println(driver.findElement(By.cssSelector(".example")).getText());
 
 		driver.switchTo().window(parentId);
-		// System.out.println(driver.findElement(By.cssSelector(".example")).getText());
-		// driver.findElement(By.cssSelector(".example")).getText();
+		 System.out.println(driver.findElement(By.cssSelector(".example")).getText());
+		 driver.findElement(By.cssSelector(".example")).getText();
 		System.out.println(driver.findElement(By.cssSelector(".example")).getText().split("Click")[0]);
-
-		        driver.quit();
+		        
+		        TakesScreenshot ts = (TakesScreenshot)driver;
+		    	File file = ts.getScreenshotAs(OutputType.FILE);
+		    	try {
+					FileUtils.copyFile(file, new File("logo.png"));
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+//		    	String save = System.getProperty("user.dir")+"\\reports\\"+methodName + ".png";
+		    	  
+		 driver.quit();    	
 
 	}
 

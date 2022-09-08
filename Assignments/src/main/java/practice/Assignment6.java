@@ -34,9 +34,10 @@ public class Assignment6 {
 			System.out.println(t);
 			driver.switchTo().alert().accept();
 		}
-		
+		driver.close();
 	}
 
+	
 }
 
 
