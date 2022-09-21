@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="A_package.HomePage">
+      <class name="A_package.Assignment4">
         <methods>
-          <include name="pageNavigation" invocation-numbers="0 1"/>
-          <include name="close"/>
-          <include name="initialize"/>
+          <include name="test4"/>
         </methods>
-      </class> <!-- A_package.HomePage -->
+      </class> <!-- A_package.Assignment4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

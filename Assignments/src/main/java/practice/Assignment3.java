@@ -12,15 +12,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import practice_1.base_class;
 
-public class Assignment3 {
+
+public class Assignment3 extends base_class{
+	
+	@BeforeTest
+	public void initialize() {
+		
+		driver=initializeDriver();
+	}
 
 	@Test
 	public void test3() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
 		
 		WebDriverWait w=new WebDriverWait(driver, Duration.ofSeconds(5));
 		String[] items= {"Brocolli", "Tomato", "Cucumber"};
@@ -30,7 +38,7 @@ public class Assignment3 {
 		
 		driver.findElement(By.id("username")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.id("password")).sendKeys("learning");
-		
+		 
 //		driver.findElement(By.className("btn btn-success")).click();
 //		
 //		System.out.println("clicked user");
@@ -103,5 +111,12 @@ public class Assignment3 {
 			}
 		
 	}
+	    
+	    
+	    @AfterTest
+		public void close()
+		{
+			driver.close();
+		}
 
 }

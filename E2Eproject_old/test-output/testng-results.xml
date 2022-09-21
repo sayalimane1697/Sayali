@@ -1,84 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-25T18:38:25 IST" name="Suite" finished-at="2022-08-25T18:38:40 IST" duration-ms="14662">
+  <suite started-at="2022-09-12T19:10:19 IST" name="Default suite" finished-at="2022-09-12T19:10:25 IST" duration-ms="6067">
     <groups>
     </groups>
-    <test started-at="2022-08-25T18:38:25 IST" name="main testing" finished-at="2022-08-25T18:38:33 IST" duration-ms="7509">
-      <class name="A_package.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:25 IST" name="initialize" finished-at="2022-08-25T18:38:28 IST" duration-ms="3063" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:28 IST" name="pageNavigation" data-provider="getData" finished-at="2022-08-25T18:38:31 IST" duration-ms="2604" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[nonrestricted user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageNavigation -->
-        <test-method signature="pageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:31 IST" name="pageNavigation" data-provider="getData" finished-at="2022-08-25T18:38:33 IST" duration-ms="1710" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[456789]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[restricted user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageNavigation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:A_package.HomePage@4c37b5b]" started-at="2022-08-25T18:38:33 IST" name="close" finished-at="2022-08-25T18:38:33 IST" duration-ms="84" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- A_package.HomePage -->
-    </test> <!-- main testing -->
-    <test started-at="2022-08-25T18:38:33 IST" name="validation of test" finished-at="2022-08-25T18:38:37 IST" duration-ms="3457">
-      <class name="A_package.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-25T18:38:33 IST" name="initialize" finished-at="2022-08-25T18:38:36 IST" duration-ms="3087" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="pageNavigation()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-25T18:38:36 IST" name="pageNavigation" finished-at="2022-08-25T18:38:36 IST" duration-ms="39" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2022-09-12T19:10:19 IST" name="Default test" finished-at="2022-09-12T19:10:25 IST" duration-ms="6067">
+      <class name="A_package.Assignment4">
+        <test-method signature="test4()[pri:0, instance:A_package.Assignment4@478190fc]" started-at="2022-09-12T19:10:19 IST" name="test4" finished-at="2022-09-12T19:10:25 IST" duration-ms="6017" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [FEATURED COURSES123] but found [FEATURED COURSES]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Click Here']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SS-2017-03-112', ip: '192.168.2.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27e60405a76bdad887fc2246e9264e14, findElement {using=xpath, value=//a[text()='Click Here']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SAYALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50432/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27e60405a76bdad887fc2246e9264e14]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES123] but found [FEATURED COURSES]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at A_package.validateTitle.pageNavigation(validateTitle.java:37)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Click Here']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SS-2017-03-112', ip: '192.168.2.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27e60405a76bdad887fc2246e9264e14, findElement {using=xpath, value=//a[text()='Click Here']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SAYALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50432/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27e60405a76bdad887fc2246e9264e14
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at A_package.Assignment4.test4(Assignment4.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,35 +77,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageNavigation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:A_package.validateTitle@54227100]" started-at="2022-08-25T18:38:36 IST" name="close" finished-at="2022-08-25T18:38:37 IST" duration-ms="107" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- A_package.validateTitle -->
-    </test> <!-- validation of test -->
-    <test started-at="2022-08-25T18:38:37 IST" name="navigation bar" finished-at="2022-08-25T18:38:40 IST" duration-ms="3151">
-      <class name="A_package.navigationBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-25T18:38:37 IST" name="initialize" finished-at="2022-08-25T18:38:40 IST" duration-ms="2965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="validationBar()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-25T18:38:40 IST" name="validationBar" finished-at="2022-08-25T18:38:40 IST" duration-ms="59" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validationBar -->
-        <test-method is-config="true" signature="close()[pri:0, instance:A_package.navigationBar@4763c727]" started-at="2022-08-25T18:38:40 IST" name="close" finished-at="2022-08-25T18:38:40 IST" duration-ms="122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- A_package.navigationBar -->
-    </test> <!-- navigation bar -->
-    <test started-at="2022-08-25T18:38:40 IST" name="Listener test" finished-at="2022-08-25T18:38:40 IST" duration-ms="2">
-    </test> <!-- Listener test -->
-    <test started-at="2022-08-25T18:38:40 IST" name="extent report test" finished-at="2022-08-25T18:38:40 IST" duration-ms="2">
-    </test> <!-- extent report test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test4 -->
+      </class> <!-- A_package.Assignment4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

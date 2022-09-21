@@ -3,15 +3,24 @@ package practice;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import practice_1.base_class;
 
-public class Assignment5 {
+
+public class Assignment5 extends base_class {
+	
+	@BeforeTest
+	public void initialize() {
+		
+		driver=initializeDriver();
+		}
+	
 
 	@Test
 	public void test5() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
 		
 		driver.get("https://the-internet.herokuapp.com/");
 		driver.manage().window().maximize();
@@ -23,4 +32,10 @@ public class Assignment5 {
 
 	}
 
+	@AfterTest
+	public void close()
+	{
+		driver.close();
+	}
+	
 }

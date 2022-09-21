@@ -52,29 +52,36 @@ public class Questions {
 // (3) find out whether the given String is Palindrome or not
 //    A palindrome is a number, string or a sequence which will be the same even after you reverse the order. For example, RACECAR, if spelled backward will be same as RACECAR. 	    
 //	    
-	    public static void main (String[] args) {
-		Scanner sc= new Scanner(System.in);
-		System.out.print("Enter your statement: ");
-		String str = sc.nextLine();
-		checkPalindrome(str);
-	    }
-	    
-	    static void checkPalindrome(String input)
-	    {
-	    	boolean p = true; //Assuming to be true
-	    	int length = input.length(); 
-	    	for(int i=0; i<= length/2; i++) //dividing length of the string by 2 & comparing it
-	    	{
-	    		if(input.charAt(i) != input.charAt(length-i-1))
-	    		{
-	    			p = false;
-	    			break;
-	    		}
-	    	}
-	    	System.out.println(input + " is palindrome: " + p);
-	    }
-    }    
+//	    public static void main (String[] args) {
+//		Scanner sc= new Scanner(System.in);
+//		System.out.print("Enter your statement: ");
+//		String str = sc.nextLine();
+//		checkPalindrome(str);
+//	    }
+//	    
+//	    static void checkPalindrome(String input)
+//	    {
+//	    	boolean p = true; //Assuming to be true
+//	    	int length = input.length(); 
+//	    	for(int i=0; i<= length/2; i++) //dividing length of the string by 2 & comparing it
+//	    	{
+//	    		if(input.charAt(i) != input.charAt(length-i-1))
+//	    		{
+//	    			p = false;
+//	    			break;
+//	    		}
+//	    	}
+//	    	System.out.println(input + " is palindrome: " + p);
+//	    }
+    
 	
+// (4) 
 	
-
-
+	public static void main(String[] args) {
+		
+		Scanner i= new Scanner(System.in);
+		System.out.println("Enter number: ");
+		
+		
+	}	
+}

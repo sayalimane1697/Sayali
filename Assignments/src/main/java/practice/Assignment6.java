@@ -5,16 +5,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import practice_1.base_class;
 
-public class Assignment6 {
+
+public class Assignment6 extends base_class{
+	
+	@BeforeTest
+	public void initialize() {
+		
+		driver=initializeDriver();
+	}
 
 	@Test
 	public void test6() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/#");
 		driver.manage().window().maximize();
 		
@@ -34,9 +42,13 @@ public class Assignment6 {
 			System.out.println(t);
 			driver.switchTo().alert().accept();
 		}
-		driver.close();
+		
 	}
 
+	@AfterTest
+	public void close() {
+		driver.close();
+	}
 	
 }
 

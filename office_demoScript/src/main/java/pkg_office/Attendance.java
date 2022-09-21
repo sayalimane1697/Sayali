@@ -14,7 +14,7 @@ public class Attendance extends base {
 	public void addAttedance(WebDriver driver) throws InterruptedException {
 		
 		
-		driver.findElement(By.xpath("//div[text()= 'Add Attendance']")).click();
+		driver.findElement(By.xpath("//div/span[@title= 'Add Attendance']")).click();
 
 //	System.out.println(java.time.LocalDate.now());
 
