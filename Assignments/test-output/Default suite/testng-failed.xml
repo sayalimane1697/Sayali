@@ -5,6 +5,8 @@
     <classes>
       <class name="practice.Assignment4">
         <methods>
+          <include name="close"/>
+          <include name="initialize"/>
           <include name="test4"/>
         </methods>
       </class> <!-- practice.Assignment4 -->

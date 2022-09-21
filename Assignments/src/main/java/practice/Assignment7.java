@@ -7,18 +7,25 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import practice_1.base_class;
 
 
-public class Assignment7 {
+public class Assignment7 extends base_class {
+	
+	@BeforeTest
+	public void initialize() {
+		
+		driver=initializeDriver();
+	}
 
 	@Test
 	public void test7() {
 		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
 		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/#");
 		driver.manage().window().maximize();
@@ -32,7 +39,7 @@ public class Assignment7 {
 		
 		String text = driver.findElement(By.xpath("//table[@class='table-display'] //tr[3]")).getText();
 	
-	    System.out.println(text);
+	    System.out.println(text); 
 	    
 		
 // OR		
@@ -51,6 +58,11 @@ public class Assignment7 {
 //
 //	    System.out.println(secondrow.get(2).getText());
 	    
+	}
+	
+	@AfterTest
+	public void close() {
+		driver.close();
 	}
 
 }

@@ -27,7 +27,7 @@ public class Base {
 	public WebDriver initializeDriver() throws IOException
 	{
 	 p=new Properties();
-	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\A_package\\data.properties");
+	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\A_package\\data.properties"); //user.dir - automatically gives the project path
 	p.load(fis);
 	String browserName= p.getProperty("browser");
 	String URL= p.getProperty("url"); 

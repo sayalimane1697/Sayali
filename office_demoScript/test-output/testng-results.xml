@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-19T18:49:43 IST" name="Default suite" finished-at="2022-08-19T18:50:19 IST" duration-ms="35306">
+  <suite started-at="2022-09-20T10:22:18 IST" name="Suite" finished-at="2022-09-20T10:22:40 IST" duration-ms="22386">
     <groups>
     </groups>
-    <test started-at="2022-08-19T18:49:43 IST" name="Default test" finished-at="2022-08-19T18:50:19 IST" duration-ms="35306">
+    <test started-at="2022-09-20T10:22:18 IST" name="test" finished-at="2022-09-20T10:22:40 IST" duration-ms="22386">
       <class name="pkg_office.sign_in">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pkg_office.sign_in@4f18837a]" started-at="2022-08-19T18:49:43 IST" name="initialize" finished-at="2022-08-19T18:49:46 IST" duration-ms="2384" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pkg_office.sign_in@4f18837a]" started-at="2022-09-20T10:22:18 IST" name="initialize" finished-at="2022-09-20T10:22:20 IST" duration-ms="2322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="pageNavigation()[pri:0, instance:pkg_office.sign_in@4f18837a]" started-at="2022-08-19T18:49:46 IST" name="pageNavigation" finished-at="2022-08-19T18:50:19 IST" duration-ms="32893" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="pageNavigation()[pri:0, instance:pkg_office.sign_in@4f18837a]" started-at="2022-09-20T10:22:20 IST" name="pageNavigation" finished-at="2022-09-20T10:22:40 IST" duration-ms="20028" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: headless chrome=104.0.5112.81)
+              <![CDATA[element click intercepted: Element <img class="app-logo" style="width: 24px" src="/assets/erpnext/images/erpnext-logo.svg"> is not clickable at point (343, 30). Other element would receive the click: <div class="modal fade show" style="overflow: auto; z-index: 2000; display: block;" tabindex="-1" aria-modal="true">...</div>
+  (Session info: chrome=105.0.5195.126)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SS-2017-03-112', ip: '192.168.2.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [48cb6a7c1d86fa3e143fbaaa2ee4aa86, clickElement {id=5bb4f309-77e3-4532-a8fd-ad22edc454ff}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SAYALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52412}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52412/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (48cb6a7c1d86fa3e143fbaaa2ee4aa86)] -> xpath: //ul[@id='awesomplete_list_4']]
-Session ID: 48cb6a7c1d86fa3e143fbaaa2ee4aa86]]>
+Command: [6ccff09369088c4dde968a3ac4fb161e, clickElement {id=63868528-4e6e-4764-95e8-5caf3089cc70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SAYALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52579/devtoo..., se:cdpVersion: 105.0.5195.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6ccff09369088c4dde968a3ac4fb161e)] -> xpath: //img[@class='app-logo']]
+Session ID: 6ccff09369088c4dde968a3ac4fb161e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=104.0.5112.81)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="app-logo" style="width: 24px" src="/assets/erpnext/images/erpnext-logo.svg"> is not clickable at point (343, 30). Other element would receive the click: <div class="modal fade show" style="overflow: auto; z-index: 2000; display: block;" tabindex="-1" aria-modal="true">...</div>
+  (Session info: chrome=105.0.5195.126)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SS-2017-03-112', ip: '192.168.2.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [48cb6a7c1d86fa3e143fbaaa2ee4aa86, clickElement {id=5bb4f309-77e3-4532-a8fd-ad22edc454ff}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SAYALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52412}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52412/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (48cb6a7c1d86fa3e143fbaaa2ee4aa86)] -> xpath: //ul[@id='awesomplete_list_4']]
-Session ID: 48cb6a7c1d86fa3e143fbaaa2ee4aa86
+Command: [6ccff09369088c4dde968a3ac4fb161e, clickElement {id=63868528-4e6e-4764-95e8-5caf3089cc70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SAYALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52579/devtoo..., se:cdpVersion: 105.0.5195.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6ccff09369088c4dde968a3ac4fb161e)] -> xpath: //img[@class='app-logo']]
+Session ID: 6ccff09369088c4dde968a3ac4fb161e
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,8 +48,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pkg_office.leaveApplication.leaveMethod(leaveApplication.java:25)
-at pkg_office.sign_in.pageNavigation(sign_in.java:57)
+at pkg_office.sign_in.pageNavigation(sign_in.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,11 +79,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageNavigation -->
       </class> <!-- pkg_office.sign_in -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
 </testng-results>

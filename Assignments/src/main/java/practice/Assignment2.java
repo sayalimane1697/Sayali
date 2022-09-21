@@ -8,15 +8,23 @@ package practice;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-	public class Assignment2 {
+import practice_1.base_class;
+
+	public class Assignment2 extends base_class{
+		
+		@BeforeTest
+		public void initialize() {
+			
+			driver=initializeDriver();
+		}
 
 		@Test
 		public void test2() {
-//			WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
-			WebDriver driver=new ChromeDriver();
+
 			driver.get("https://rahulshettyacademy.com/angularpractice/");
 			
 			driver.manage().window().maximize();
@@ -43,7 +51,7 @@ import org.testng.annotations.Test;
 					
 					break;
 				}
-			}
+			} 
 			
 			System.out.println(driver.findElement(By.id("inlineRadio1")).isEnabled());
 			driver.findElement(By.id("inlineRadio1")).click();
@@ -56,9 +64,14 @@ import org.testng.annotations.Test;
 			
 			System.out.println(driver.findElement(By.cssSelector(".alert.alert-success.alert-dismissible")).getText());
 	
-			driver.close();
+		
 	}
 
+		@AfterTest
+		public void close()
+		{
+			driver.close();
+		}
 	
 	
 }
