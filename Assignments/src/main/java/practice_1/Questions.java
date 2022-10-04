@@ -75,13 +75,38 @@ public class Questions {
 //	    }
     
 	
-// (4) 
-	
-	public static void main(String[] args) {
+// (4) Java program to print alphabet A pattern
+
+//		void display(int n)
+//		{
+//		
+//		for (int i = 0; i<=n; i++) {  // Outer for loop for number of lines
+//			
+//			for(int j=0; j<=n/2; j++) {  // Inner for loop for logic execution
+//				
+//		// prints two column lines, print first line of alphabet, prints middle line	
+//				if((j==0 || j==n/2) && i!=0 || i==0 && j!=n/2 || i==n/2)		     
+//				
+//				 System.out.println("*");
+//					
+//				else 
+//				{
+//			     System.out.println(" "); 
+//				}
+//				 System.out.println();				
+//			}
+//		}
+//		}
+//			
+//		public static void main (String[] args) {
+//		
+//			Scanner sc = new Scanner(System.in);
+//		    Questions qs= new Questions();
+//		    qs.display(7);
+//		}
 		
-		Scanner i= new Scanner(System.in);
-		System.out.println("Enter number: ");
 		
 		
-	}	
-}
+		
+		
+}	
