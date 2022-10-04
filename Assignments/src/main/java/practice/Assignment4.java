@@ -48,9 +48,9 @@ public class Assignment4 extends base_class  {
 		driver.findElement(By.xpath("//ul/li/a[@href='/windows']")).click();
 		WebElement element= driver.findElement(By.xpath("//a[text()='Click Here']")); 
 		Actions act= new Actions(driver);
-//	    act.moveToElement(element).click();
-		this.getScreenshot(result);
-//	
+
+		//	    act.moveToElement(element).click();
+		
 //		Set<String> windows=driver.getWindowHandles();
 //		Iterator<String>it=windows.iterator();
 //		String parentId=it.next();
@@ -68,56 +68,53 @@ public class Assignment4 extends base_class  {
 		
 	}
 
-//		public static void getScreenshot(WebDriver webdriver, String path) {
-//			
-//			try {
-//				TakesScreenshot ts = ((TakesScreenshot)webdriver);
-//				File srcf= ts.getScreenshotAs(OutputType.FILE);
-//				File destf= new File(path);
-////				FileUtils.copyFile(srcf, destf); 
-//				FileUtils.copyFile(srcf, new File("Fail1.png")); // need apache common.in jar
-//				System.out.println("Screenshot is captured");
-//				
-//				} 
-//			
-//			catch (Exception e) {
-//					// TODO Auto-generated catch block
-//				System.out.println("Screenshot is not captured");
-//
-//				}
-////			    	
-//
-//	}
-		
-	
+		public static void getScreenshot(WebDriver webdriver, String path) {
+			
+			try {
+				TakesScreenshot ts = ((TakesScreenshot)webdriver);
+				File srcf= ts.getScreenshotAs(OutputType.FILE);
+				File destf= new File(path);
+//				FileUtils.copyFile(srcf, destf); 
+				FileUtils.copyFile(srcf, new File("Fail1.png")); // need apache common.in jar
+				System.out.println("Screenshot is captured");
+				
+				} 
+			
+			catch (Exception e) {
+					// TODO Auto-generated catch block
+				System.out.println("Screenshot is not captured");
 
+				}
+//			    	
 
-	public static void getScreenshot(ITestResult result) {
-		
-	
-		if (ITestResult.FAILURE == result.getStatus()) {
-
-	           try {
-
-	               TakesScreenshot screenshot = ((TakesScreenshot) driver);
-
-	                File file = screenshot.getScreenshotAs(OutputType.FILE);
-
-	               FileUtils.copyFile(file, new File("test.png"));
-
-	               System.out.println("Screnshot is Captured");
-
-	           } catch (Exception e) {
-	                // TODO: handle exception
-
-	               System.out.println("Screnshot is not Captured");
-		
-	           }
-		}
-		
-		
-		
 	}
+		
+	
+// 
+
+//	public static void getScreenshot(ITestResult result) {
+//		
+//	
+//		if (ITestResult.FAILURE == result.getStatus()) {
+//
+//	           try {
+//
+//	               TakesScreenshot screenshot = ((TakesScreenshot) driver);
+//
+//	                File file = screenshot.getScreenshotAs(OutputType.FILE);
+//
+//	               FileUtils.copyFile(file, new File("test.png"));
+//
+//	               System.out.println("Screnshot is Captured");
+//
+//	           } catch (Exception e) {
+//	                // TODO: handle exception
+//
+//	               System.out.println("Screnshot is not Captured");
+//		
+//	           }
+//		}	
+//	}
 
 	@AfterTest
 	public void close()
