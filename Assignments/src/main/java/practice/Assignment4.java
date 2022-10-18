@@ -51,19 +51,23 @@ public class Assignment4 extends base_class  {
 
 		//	    act.moveToElement(element).click();
 		
-//		Set<String> windows=driver.getWindowHandles();
-//		Iterator<String>it=windows.iterator();
-//		String parentId=it.next();
-//		String childId=it.next();
-//		// String subChildId=it.next();
-//
-//		driver.switchTo().window(childId);
-//		System.out.println(driver.findElement(By.cssSelector(".example")).getText());
-//
-//		driver.switchTo().window(parentId);
-//		System.out.println(driver.findElement(By.cssSelector(".example")).getText());
-//		driver.findElement(By.cssSelector(".example")).getText();
-//		System.out.println(driver.findElement(By.cssSelector(".example")).getText().split("Click")[0]);
+		this.getScreenshot(driver, "C:\\Users\\SayaliMane\\ScreenShot\\assign4.png");
+//		File ss=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(ss, new File("output4.png")); 
+		
+		Set<String> windows=driver.getWindowHandles();
+		Iterator<String>it=windows.iterator();
+		String parentId=it.next().;
+		String childId=it.next();
+		// String subChildId=it.next();
+
+		driver.switchTo().window(childId);
+		System.out.println(driver.findElement(By.cssSelector(".example")).getText());
+
+		driver.switchTo().window(parentId);
+		System.out.println(driver.findElement(By.cssSelector(".example")).getText());
+		driver.findElement(By.cssSelector(".example")).getText();
+		System.out.println(driver.findElement(By.cssSelector(".example")).getText().split("Click")[0]);
 		
 		
 	}
@@ -74,9 +78,9 @@ public class Assignment4 extends base_class  {
 				TakesScreenshot ts = ((TakesScreenshot)webdriver);
 				File srcf= ts.getScreenshotAs(OutputType.FILE);
 				File destf= new File(path);
-//				FileUtils.copyFile(srcf, destf); 
-				FileUtils.copyFile(srcf, new File("Fail1.png")); // need apache common.in jar
-				System.out.println("Screenshot is captured");
+				FileUtils.copyFile(srcf, destf); 
+//				FileUtils.copyFile(srcf, new File("Fail1.png")); // need apache common.in jar
+//				System.out.println("Screenshot is captured");
 				
 				} 
 			

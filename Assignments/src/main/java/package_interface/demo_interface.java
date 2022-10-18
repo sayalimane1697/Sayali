@@ -4,4 +4,5 @@ public interface demo_interface {
 
 	public void method();
 	public void getData();
+	
 }

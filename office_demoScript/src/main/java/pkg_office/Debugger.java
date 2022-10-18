@@ -19,26 +19,26 @@ public class Debugger {
 		//System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Driver\\chromedriver_win32\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setExperimentalOption("debuggerAddress", "localhost:9876");
+        chromeOptions.setExperimentalOption("debuggerAddress", "localhost:9988");
         driver= new ChromeDriver(chromeOptions);
-    	driver.get("https://onebeta.systenics.com/");
+    	driver.get("https://onebeta.systenics.com/app");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		landingPage land= new landingPage(driver);
 		loginPage login = new loginPage(driver);
 	
-		land.getexplore().click();
-		land.getbtn().click();
-		land.getbtnOfc().click();
-		
-	
-		login.getemail().sendKeys("sayali.m@systenics.net");
-		login.geteclick().click();
-		login.getpassword().sendKeys("a67!FT@Kc$CT7WZ");
-		Thread.sleep(1000);
-		login.getpclick().click();
-		login.getlogin().click();
-		System.out.println("login sucess");
+//		land.getexplore().click();
+//		land.getbtn().click();
+//		land.getbtnOfc().click();
+//		
+//	
+//		login.getemail().sendKeys("sayali.m@systenics.net");
+//		login.geteclick().click();
+//		login.getpassword().sendKeys("a67!FT@Kc$CT7WZ");
+//		Thread.sleep(1000);
+//		login.getpclick().click();
+//		login.getlogin().click();
+//		System.out.println("login success");
 		
 		Attendance at = new Attendance();
 	    at.addAttedance(driver);

@@ -2,24 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-21T18:23:18 IST" name="Default suite" finished-at="2022-09-21T18:23:24 IST" duration-ms="6429">
+  <suite started-at="2022-10-06T12:05:51 IST" name="Default suite" finished-at="2022-10-06T12:05:58 IST" duration-ms="6693">
     <groups>
     </groups>
-    <test started-at="2022-09-21T18:23:18 IST" name="Default test" finished-at="2022-09-21T18:23:24 IST" duration-ms="6429">
+    <test started-at="2022-10-06T12:05:51 IST" name="Default test" finished-at="2022-10-06T12:05:58 IST" duration-ms="6693">
       <class name="practice.Assignment4">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:practice.Assignment4@3ce1e309]" started-at="2022-09-21T18:23:18 IST" name="initialize" finished-at="2022-09-21T18:23:21 IST" duration-ms="2742" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:practice.Assignment4@3ce1e309]" started-at="2022-10-06T12:05:51 IST" name="initialize" finished-at="2022-10-06T12:05:53 IST" duration-ms="2080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="test4()[pri:0, instance:practice.Assignment4@3ce1e309]" started-at="2022-09-21T18:23:21 IST" name="test4" finished-at="2022-09-21T18:23:24 IST" duration-ms="3472" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null]]>
-            </message>
+        <test-method signature="test4()[pri:0, instance:practice.Assignment4@3ce1e309]" started-at="2022-10-06T12:05:53 IST" name="test4" finished-at="2022-10-06T12:05:57 IST" duration-ms="4456" status="FAIL">
+          <exception class="java.util.NoSuchElementException">
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getStatus()" because "result" is null
-at practice.Assignment4.getScreenshot(Assignment4.java:99)
-at practice.Assignment4.test4(Assignment4.java:53)
+              <![CDATA[java.util.NoSuchElementException
+at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:760)
+at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:780)
+at practice.Assignment4.test4(Assignment4.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,11 +48,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.util.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->
-        <test-method is-config="true" signature="close()[pri:0, instance:practice.Assignment4@3ce1e309]" started-at="2022-09-21T18:23:24 IST" name="close" finished-at="2022-09-21T18:23:24 IST" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:practice.Assignment4@3ce1e309]" started-at="2022-10-06T12:05:57 IST" name="close" finished-at="2022-10-06T12:05:58 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
