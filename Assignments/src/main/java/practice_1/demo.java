@@ -42,7 +42,7 @@ public class demo {
 			Actions act= new Actions(driver);
 //		    act.moveToElement(element).click();
 		
-			this.takeSnapShot(driver, "C:\\Users\\SayaliMane\\Assignment4.png") ;   
+			this.takeSnapShot(driver, "C:\\Users\\SayaliMane\\ScreenShot\\Assignment4.png") ;   
 			
 			Set<String> windows=driver.getWindowHandles();
 			Iterator<String>it=windows.iterator();
