@@ -11,7 +11,8 @@ public class loginPage {
 	private By password= By.id("user_password");
 	private By login= By.name("commit");
 	private By forgotPassword = By.cssSelector("[href*='password/new']");
-
+ 
+	private int i= 5;
 	
 	 public loginPage(WebDriver driver) {
 			this.driver= driver; //
@@ -37,6 +38,11 @@ public class loginPage {
 	    	driver.findElement(forgotPassword).click();
 	    	return new ForgotPassword(driver);
 //	    	return driver.findElement(forgotPassword);
+	    	
+	    }
+	    
+	    public int integer() {
+			return i;
 	    	
 	    }
 }
