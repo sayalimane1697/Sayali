@@ -44,18 +44,28 @@ public  class classDemo extends demo_interface{
 		
 // To find min/max no from 3*3 matrix
 	int n[][]= {{6,8,4},{2,11,6},{9,-1,2}};
-	int value=n[0][0];
+	int min=n[0][0];
+	int column=0;
 	for(int i=0;i<3;i++) 
 	{
 		for(int j=0;j<3;j++)
 		{
-			if(value > n[i][j])        //to find max no- <  and for min no- >
+			if(min > n[i][j])        //to find max no- <  and for min no- >
 			{
-				value=n[i][j];
+				min=n[i][j];
+				column=j;
 			}
 		}
 	}
-	System.out.println(value);
+	
+	int max=n[0][column];
+	int k=0;
+	if(n[k][column]>max)
+	{
+		max=n[k][column];
+	}
+	System.out.println(max);
+	System.out.println(min);
 	}
 	
 	
@@ -81,8 +91,6 @@ public  class classDemo extends demo_interface{
 //		c.screenShot();
 //
 //	}
-//
-//
 //	
 //	public static void screenShot() {
 //		
