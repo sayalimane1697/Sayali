@@ -16,4 +16,10 @@ public abstract class demo_interface {
 	
 //	public abstract void getData();
 	
+	public static void main(String[] args) {
+		
+// to print date 
+		
+	}
+	
 }
