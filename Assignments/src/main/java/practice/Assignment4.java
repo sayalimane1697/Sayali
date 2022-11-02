@@ -17,11 +17,13 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import dev.failsafe.Timeout;
 import practice_1.base_class;
 
 
@@ -51,13 +53,13 @@ public class Assignment4 extends base_class  {
 
 		//	    act.moveToElement(element).click();
 		
-		this.getScreenshot(driver, "C:\\Users\\SayaliMane\\ScreenShot\\assign4.png");
+		this.getScreenshot(driver, "C:\\Users\\SayaliMane\\ScreenShots\\assign4.png");
 //		File ss=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //		FileUtils.copyFile(ss, new File("output4.png")); 
 		
 		Set<String> windows=driver.getWindowHandles();
 		Iterator<String>it=windows.iterator();
-		String parentId=it.next().;
+		String parentId=it.next();
 		String childId=it.next();
 		// String subChildId=it.next();
 
@@ -79,8 +81,8 @@ public class Assignment4 extends base_class  {
 				File srcf= ts.getScreenshotAs(OutputType.FILE);
 				File destf= new File(path);
 				FileUtils.copyFile(srcf, destf); 
-//				FileUtils.copyFile(srcf, new File("Fail1.png")); // need apache common.in jar
-//				System.out.println("Screenshot is captured");
+				FileUtils.copyFile(srcf, new File("Fail.png")); // need apache common.in jar
+				System.out.println("Screenshot is captured");
 				
 				} 
 			
@@ -94,31 +96,6 @@ public class Assignment4 extends base_class  {
 	}
 		
 	
-// 
-
-//	public static void getScreenshot(ITestResult result) {
-//		
-//	
-//		if (ITestResult.FAILURE == result.getStatus()) {
-//
-//	           try {
-//
-//	               TakesScreenshot screenshot = ((TakesScreenshot) driver);
-//
-//	                File file = screenshot.getScreenshotAs(OutputType.FILE);
-//
-//	               FileUtils.copyFile(file, new File("test.png"));
-//
-//	               System.out.println("Screnshot is Captured");
-//
-//	           } catch (Exception e) {
-//	                // TODO: handle exception
-//
-//	               System.out.println("Screnshot is not Captured");
-//		
-//	           }
-//		}	
-//	}
 
 	@AfterTest
 	public void close()
