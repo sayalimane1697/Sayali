@@ -1,4 +1,7 @@
-package package_interface;
+package package_demo;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public abstract class demo_interface {
 
@@ -14,12 +17,7 @@ public abstract class demo_interface {
 		System.out.println(a);
 	}
 	
-//	public abstract void getData();
-	
-	public static void main(String[] args) {
+	public abstract void getData();
 		
-// to print date 
-		
-	}
 	
 }
