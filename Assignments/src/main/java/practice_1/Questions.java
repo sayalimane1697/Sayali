@@ -7,25 +7,25 @@ public class Questions {
 // (1) calculate factorial of number
 //     Factorial of a number is the product of all the positive numbers less than or equal to the number. The factorial of a number n is denoted by n! 		
 //
-//	public static void main(String[] args) {
-//
-//		Scanner input = new Scanner(System.in); //Scanner object for capturing the user input
-//		System.out.println("Enter the number");
-//		int num = input.nextInt(); //Stored the entered value in variable 
-//		int factorial = fact(num); //Called the user defined function fact 
-//		System.out.println("Factorial of number is =  " + factorial);
-//	
-//	}
-//	
-//	static int fact(int n)
-//	{
-//		int output;
-//		if(n==1) {
-//		return 1;
-//		}
-//		output = fact(n-1)* n; //Recursion: Function calling itself!! 
-//		return output;
-//	}
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in); //Scanner object for capturing the user input
+		System.out.println("Enter the number");
+		int num = input.nextInt(); //Stored the entered value in variable 
+		int factorial = fact(num); //Called the user defined function fact 
+		System.out.println("Factorial of number " + num +" is =  " + factorial);
+	
+	}
+	
+	static int fact(int n)
+	{
+		int output;
+		if(n==1) {
+		return 1;
+		}
+		output = fact(n-1)* n; //Recursion: Function calling itself!! 
+		return output;
+	}
 	
 	
 // (2) calculate fibonacci series of number

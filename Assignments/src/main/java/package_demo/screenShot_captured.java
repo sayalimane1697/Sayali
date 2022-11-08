@@ -38,6 +38,7 @@ public class screenShot_captured {
 	try {
 	
 		FileUtils.copyFile(shot,new File("shot.png"));
+		FileUtils.copyFile(shot, new File("C:\\Users\\SayaliMane\\ScreenShots\\ss.png"));
 	} 
 	catch (IOException e)
 	{
