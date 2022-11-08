@@ -1,8 +1,5 @@
 package package_demo;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public abstract class demo_interface {
 
 	public void method() {
@@ -20,4 +17,10 @@ public abstract class demo_interface {
 	public abstract void getData();
 		
 	
+	private int i=5;
+	
+	public void dataa()
+	{
+		System.out.println(i);
+	}
 }
