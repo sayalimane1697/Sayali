@@ -3,14 +3,21 @@
 <suite name="Suite" parallel="tests" thread-count="5">
 
 	<test thread-count="5" name="Test">
+
+		<groups>
+			<run>
+				<include name="test1"></include>
+			</run>
+		</groups>
 		<classes>
-			<class name="practice.Assignment1" />
+
+	<!-- 		<class name="practice.Assignment1" /> -->
 			<class name="practice.Assignment2" />
 			<class name="practice.Assignment3" />
 			<class name="practice.Assignment5" />
 			<class name="practice.Assignment6" />
 			<class name="practice.Assignment7" />
-			<class name="practice.Assignment8" /> 
+			<class name="practice.Assignment8" />
 			<class name="practice.Assignment4" />
 
 		</classes>
