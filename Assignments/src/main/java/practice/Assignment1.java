@@ -22,7 +22,7 @@ public class Assignment1 extends base_class {
 		driver=initializeDriver();
 	}
 
-  @Test
+  @Test(groups= {"test1"})
   public void test1() {
 	  
 	  
