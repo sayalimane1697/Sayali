@@ -16,6 +16,7 @@ public abstract class demo_interface {
 	
 	public abstract void getData();
 		
+	public abstract void getData2();
 	
 	private int i=5;
 	
